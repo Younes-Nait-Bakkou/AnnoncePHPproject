@@ -1,6 +1,6 @@
+<?php include "connexion.php";?>
 <?php 
 session_start();
-$cnx = new PDO("mysql:host=localhost;dbname=annonce","root","123123zzgg");
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,5 @@
-<?php 
+<?php include "connexion.php";?>
+<?php     
     session_start();
     if($_SERVER["REQUEST_METHOD"]==="POST"){
         
@@ -8,7 +9,6 @@
         header("location:login.php");
         exit();
     }
-    $cnx = new PDO("mysql:host=localhost;dbname=annonce","root","123123zzgg");
     $stm = $cnx->prepare("select id from utilisateur where email = :email and password = :pass");
     $stm->bindParam(":email",$_SESSION["email"]);
     $stm->bindParam(":pass",$_SESSION["password"]);

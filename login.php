@@ -1,5 +1,5 @@
+<?php include "connexion.php";?>
 <?php
-$cnx = new PDO("mysql:host=localhost;dbname=annonce","root","123123zzgg");
 $msg = "";
 session_start();
 if(isset($_SESSION['email'])){

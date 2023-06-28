@@ -1,3 +1,4 @@
+<?php include "connexion.php";?>
 <ul class="menu">
     <li class="logo">
         <a href="#" id="logoLink"><img src="imgs/LogoF.png" alt="Logo" width="50"></a>

@@ -1,3 +1,4 @@
+<?php include "connexion.php";?>
 <?php 
 session_start();
 if (!isset($_SESSION["email"]))
@@ -14,8 +15,6 @@ if (!isset($_SESSION["email"]))
 </head>
 <body>
     <?php include 'Menu.php'; ?>
-    <?php
-        $cnx = new PDO("mysql:host=localhost;dbname=annonce","root","123123zzgg");    ?>
     <div class="container">
         <div class="leftcontainer">
             <img src="" alt="">
